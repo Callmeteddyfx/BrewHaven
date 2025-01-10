@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="Brewhaven">
     <title>Brewhaven Coffee</title>
-    <link rel="icon" type="image/png" href="./assets/logo1b.png">
+    <link rel="icon" type="image/png" sizes="64pxx64px" href="./assets/logo1b.png">
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div id="header"></div>
+   <div id="header">
+    <div id="logodiv">
+        <img src="./assets/logo1b.png" id="logo" onclick="location.href = location.href"></img>
+    </div>
+    <nav class="navbar">
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+    </nav>
+    <div id="menudiv">
+        <a>MENU</a>
+        <a>REWARDS</a>
+        <a>GIFTCARDS</a>
+    </div>
+
+    <div id="logindiv">
+        <img src="./assets/locationicon2b.png" id="locationbtn" title="Find a store">
+        <button id="signinbtn">Sign In</button>
+        <button id="joinnowbtn">Join Now</button>
+    </div>
+   </div>
+
    <div id="bodydiv">
-    <p></p>
+    <div class="hidden-div">
+        <div id="blank"></div>
+        <div id="hiddendivmenu">
+            <div id="hiddendiv-1">
+            <a>Menu</a>
+            <a>Rewards</a>
+            <a>Gift Cards</a>
+        </div>
+            <div id="hiddendiv-2">
+            <button id="signinbtn">Sign In</button>
+            <button id="joinnowbtn">Join Now</button>
+            <img src="./assets/locationicon2b.png" id="locationbtn" title="Find a store">
+        </div>
+        </div>
+      </div>
+      
+    <div class="wrapperdiv">
+        <img src="./assets/item1.png" class="itemimg">
+        <p class="itemtext">To ensure a div dynamically adjusts its size when two images are placed side by side, 
+            especially on smaller screens, you can use CSS flexbox or grid combined with responsive design techniques like media queries.
+        <button id="orderbtn">Order Now</button></p>
+    </div>
+
+    <div class="wrapperdiv">
+        <p class="itemtext">To ensure a div dynamically adjusts its size when two images are placed side by side, 
+            especially on smaller screens, you can use CSS flexbox or grid combined with responsive design techniques like media queries.
+        <button id="orderbtn">Order Now</button></p>
+        <img src="./assets/item2.png" class="itemimg"> 
+    </div>
+
+    <div class="wrapperdiv">
+        <img src="./assets/50off.png" class="itemimg">
+        <p class="itemtext">To ensure a div dynamically adjusts its size when two images are placed side by side, 
+            especially on smaller screens, you can use CSS flexbox or grid combined with responsive design techniques like media queries.
+        <button id="orderbtn">Order Now</button></p>
+    </div>
+
    </div>
 </body>
 <script src="home.js"></script>
