@@ -302,7 +302,7 @@ a:hover{
 
 #orderbtn{
     cursor: pointer;
-    width: 40%;
+    width: 20%;
     margin: 1rem;
     height: 2rem;
     border: 0.01rem var(--border-color) solid;
