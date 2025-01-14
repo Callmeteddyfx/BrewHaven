@@ -5,8 +5,9 @@
     --text-color: #000;
     --text-color2: #fff;
     --border-color: #000;
-    --hover-color: #59A2A7;
+    --hover-color: #d7d7d7;
     --hover-color2: #3e4d4f;
+    --icon-size: 30px;
     --typefacePrimary: "Open Sans", serif;
     
     --imageFadeTransition: opacity 0.3s ease-in;
@@ -302,16 +303,81 @@ a:hover{
 
 #orderbtn{
     cursor: pointer;
-    width: fit-content;
+    width: 6rem;
     margin: 1rem;
     height: 2rem;
     border: 0.01rem var(--border-color) solid;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 #orderbtn:hover{
     transition: all 0.25s ease;
     background-color: var(--hover-color);
-    color: var(--text-color2);
 }
 
+#centertext{
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  #centertext{
+    font-size: 10px;
+  }
+}
+
+/*Footer*/
+
+#footerdiv{
+  height: fit-content;
+  border-top: 1px solid rgb(232, 232, 232);
+  box-shadow: 0 -1px 10px -3px rgb(169, 169, 169);
+  margin-top: 1rem;
+}
+
+#socialslogo{
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: 10rem;
+}
+
+.socialsicons{
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#socialslogo:hover{
+  transition: all 0.25s ease;
+  box-shadow: 0 0 0px 5px rgb(199, 199, 199);
+}
+
+.extradocuments{
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px){
+ .extradocuments{
+  flex-direction: column;
+ }
+ .extradocuments span{
+  padding-right: 1rem;
+  border: none !important;
+}
+}
+
+.extradocuments span{
+  padding-right: 1rem;
+  border-right: 1px solid rgb(114, 114, 114);
+}
+
+#devby{
+  font-style: var(--typefacePrimary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+}
